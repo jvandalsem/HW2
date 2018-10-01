@@ -33,7 +33,7 @@ app.config['SECRET_KEY'] = 'hardtoguessstring'
 class AlbumEntryForm(FlaskForm):
 
     aname = StringField("Enter the name of an album:", validators = [Required()])
-    arate = RadioField('How much do you like this album? (1 low, 3 high)', choices = [(1, '1'), (2, '2'), (3, '3')], validators = [Required()], coerce = int)
+    arate = RadioField('How much do you like this album? (1 low, 3 high)', choices = [('1', '1'), ('2', '2'), ('3', '3')], validators = [Required()])
     submit = SubmitField('Submit')
 
 ####################
