@@ -1,0 +1,11 @@
+<html>
+<body>
+  <form action= 'http://localhost:5000/album_result' method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.aname.label }} {{ form.aname() }}<br>
+    {{ form.arate.label }} {{form.arate() }}<br>
+    {{ form.submit() }}<br>
+  </form>
+
+</body>
+</html>
